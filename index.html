@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NAWOW Garten- und Landschaftsbau aus Kassel – naturnahe Gartengestaltung, Bewässerung, Hochbeete und Gartenpflege.">
+<meta name="theme-color" content="#243b2e">
+<title>NAWOW GmbH | Natur. Wohlfühlen. Wow.</title>
+<style>
+:root{--forest:#243b2e;--green:#526b55;--sage:#a8b8a0;--cream:#f5f3eb;--sand:#e6e0d2;--ink:#263329;--muted:#68736a;--white:#fff;--serif:Georgia,"Times New Roman",serif;--sans:Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);line-height:1.6}a{color:inherit;text-decoration:none}.container{width:min(1160px,90%);margin:auto}
+header{position:absolute;z-index:10;top:0;left:0;width:100%;color:#fff;border-bottom:1px solid #ffffff35}
+.nav{height:86px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:1.55rem;font-weight:800;letter-spacing:.12em}.brand small{display:block;font-size:.57rem;letter-spacing:.19em;font-weight:400;margin-top:-5px}.navlinks{display:flex;gap:30px;font-size:.88rem}.navlinks a{opacity:.92;transition:.2s}.navlinks a:hover{color:#c7d5bc}.nav-cta{border:1px solid #ffffffa8;padding:10px 17px;border-radius:2px}
+.hero{min-height:690px;height:90vh;max-height:850px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(17,37,26,.78),rgba(17,37,26,.22)),url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=2200&q=85') center/cover}
+.hero-content{padding-top:75px;max-width:690px}.eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:#d3dfc9;font-weight:700}.hero h1{font:clamp(3.4rem,8vw,6.8rem)/.98 var(--serif);font-weight:400;margin:22px 0}.hero p{font-size:1.1rem;max-width:550px;color:#f0f2eb}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-block;padding:14px 23px;background:#dce5d4;color:var(--forest);font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border:1px solid #dce5d4;transition:.2s}.btn:hover{background:white;transform:translateY(-2px)}.btn-outline{background:transparent;color:white;border-color:#ffffffa8}.btn-outline:hover{color:var(--forest)}
+section{padding:100px 0}.section-top{max-width:700px;margin-bottom:45px}.kicker{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green);font-weight:700}.section-title{font:clamp(2.3rem,5vw,3.7rem)/1.08 var(--serif);font-weight:400;color:var(--forest);margin:12px 0 18px}.lead{font-size:1.05rem;color:var(--muted);max-width:660px}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.intro-photo{height:470px;background:url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=85') center/cover}.intro-copy p{color:var(--muted)}.text-link{display:inline-block;margin-top:15px;color:var(--forest);font-weight:700;border-bottom:1px solid var(--sage);padding-bottom:5px}
+.services{background:#eaece3}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--cream);padding:30px 27px;min-height:220px;border:1px solid #dfe3d8;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:0 15px 35px #233b2e12}.card .num{color:#879985;font:1.4rem var(--serif)}.card h3{font:1.55rem var(--serif);font-weight:400;color:var(--forest);margin:18px 0 8px}.card p{font-size:.93rem;color:var(--muted);margin:0}
+.projects-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.project{position:relative;min-height:330px;background-size:cover;background-position:center;display:flex;align-items:end;overflow:hidden}.project:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#14251dcc)}.project.large{min-height:480px;background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=85')}.project.small-one{background-image:url('https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1000&q=85')}.project.small-two{background-image:url('https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1000&q=85')}.project-stack{display:grid;gap:18px}.project-label{position:relative;z-index:1;color:white;padding:26px}.project-label span{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:#dce5d4}.project-label h3{font:1.8rem var(--serif);font-weight:400;margin:5px 0 0}
+.values{background:var(--forest);color:white}.values .section-title{color:white}.values .lead{color:#d2dbd0}.value-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:50px}.value h3{font:1.4rem var(--serif);font-weight:400;color:#dce5d4}.value p{font-size:.9rem;color:#c3cec1}
+.about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:65px;align-items:center}.about-image{height:430px;background:url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=85') center/cover}.facts{display:flex;gap:35px;margin-top:28px}.fact strong{display:block;font:2.2rem var(--serif);color:var(--green)}.fact span{font-size:.8rem;color:var(--muted)}
+.contact{background:#eaece3}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.contact-info p{color:var(--muted)}.contact-detail{margin:25px 0}.contact-detail strong{display:block;color:var(--forest)}form{display:grid;gap:13px}input,textarea,select{width:100%;padding:14px 15px;border:1px solid #cbd3c6;background:var(--cream);font:inherit;color:var(--ink)}textarea{min-height:130px;resize:vertical}input:focus,textarea:focus,select:focus{outline:2px solid var(--sage);border-color:var(--green)}.form-note{font-size:.78rem;color:var(--muted)}
+footer{background:#192b20;color:#dce5d4;padding:35px 0}.footer-inner{display:flex;justify-content:space-between;gap:25px;align-items:center}.footer-brand{font-weight:800;letter-spacing:.14em}.footer-small{font-size:.78rem;color:#aebbad}
+.menu-toggle{display:none;background:none;border:1px solid #ffffff88;color:white;padding:8px 12px;font-size:1rem}
+@media(max-width:760px){.nav{height:72px}.menu-toggle{display:block}.navlinks{display:none;position:absolute;top:72px;left:0;width:100%;padding:20px 5%;background:var(--forest);flex-direction:column;gap:18px}.navlinks.open{display:flex}.nav-cta{display:none}.hero{min-height:650px;height:82vh}.intro-grid,.about-grid,.contact-grid,.projects-grid{grid-template-columns:1fr;gap:30px}.intro-photo{height:330px;order:2}.cards{grid-template-columns:1fr 1fr}.value-grid{grid-template-columns:1fr 1fr}.project.large{min-height:350px}.project.small-one,.project.small-two{min-height:260px}.footer-inner{align-items:flex-start;flex-direction:column}section{padding:72px 0}}
+@media(max-width:480px){.cards{grid-template-columns:1fr}.value-grid{grid-template-columns:1fr}.facts{gap:20px}.hero h1{font-size:3.5rem}}
+
+/* Erweiterte Beispielgalerie */
+.gallery{background:#f5f3eb}.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.gallery-card{background:#fff;overflow:hidden;border:1px solid #e3e6df}.gallery-card img{width:100%;height:235px;object-fit:cover;display:block;transition:transform .3s}.gallery-card:hover img{transform:scale(1.04)}.gallery-card .gallery-text{padding:22px}.gallery-card h3{font:1.5rem Georgia,serif;color:#243b2e;font-weight:400;margin:0 0 8px}.gallery-card p{color:#68736a;font-size:.9rem;margin:0}.gallery-note{color:#68736a;font-size:.8rem;margin-top:22px}@media(max-width:760px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:480px){.gallery-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+ <div class="container nav">
+  <a class="brand" href="#start">NAWOW<small>GARTEN- & LANDSCHAFTSBAU</small></a>
+  <button class="menu-toggle" aria-label="Menü öffnen" onclick="document.querySelector('.navlinks').classList.toggle('open')">Menü ☰</button>
+  <nav class="navlinks" aria-label="Hauptnavigation">
+   <a href="#leistungen">Leistungen</a><a href="#projekte">Projekte</a><a href="#bildergalerie">Galerie</a><a href="#ueber-uns">Über uns</a><a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="nav-cta" href="#kontakt">Projekt anfragen ↗</a>
+ </div>
+</header>
+<main>
+<section class="hero" id="start">
+ <div class="container hero-content">
+  <div class="eyebrow">Garten- & Landschaftsbau aus Kassel</div>
+  <h1>Natur.<br>Wohlfühlen.<br>Wow.</h1>
+  <p>Wir verwandeln Außenräume in individuelle Wohlfühlorte – naturnah geplant, regional verwurzelt und nachhaltig gestaltet.</p>
+  <div class="actions"><a class="btn" href="#leistungen">Leistungen entdecken</a><a class="btn btn-outline" href="#kontakt">Projekt anfragen</a></div>
+ </div>
+</section>
+
+<section>
+ <div class="container intro-grid">
+  <div>
+   <div class="kicker">Willkommen bei NAWOW</div>
+   <h2 class="section-title">Ein Garten ist mehr als Grün.</h2>
+   <p class="lead">Er ist ein Ort zum Ankommen, Durchatmen und Aufblühen.</p>
+   <p>Als junger Garten- und Landschaftsbaubetrieb aus Kassel gestalten wir Gärten, die zu den Menschen und zur Natur passen. Mit durchdachten Ideen, regionalem Blick und viel Liebe zum Detail schaffen wir langlebige Außenräume.</p>
+   <a class="text-link" href="#ueber-uns">NAWOW kennenlernen ↗</a>
+  </div>
+  <div class="intro-photo" role="img" aria-label="Grüner Garten mit üppiger Bepflanzung"></div>
+ </div>
+</section>
+
+<section class="services" id="leistungen">
+ <div class="container">
+  <div class="section-top"><div class="kicker">Was wir für Sie tun</div><h2 class="section-title">Unsere Leistungen</h2><p class="lead">Von der ersten Idee bis zur fertigen Gartenoase – alles aus einer Hand und passend zu Ihrem Außenbereich.</p></div>
+  <div class="cards">
+   <article class="card"><div class="num">01</div><h3>Naturnahe Gartengestaltung</h3><p>Lebendige Gärten mit vielfältigen Pflanzen, natürlichen Materialien und Raum für die heimische Tierwelt.</p></article>
+   <article class="card"><div class="num">02</div><h3>Bewässerungssysteme</h3><p>Bedarfsgerechte Bewässerung, die Pflanzen versorgt und Wasser möglichst effizient nutzt.</p></article>
+   <article class="card"><div class="num">03</div><h3>Hochbeete & Pflanzkonzepte</h3><p>Individuelle Hochbeete und passende Bepflanzungen für Genuss und grüne Vielfalt.</p></article>
+   <article class="card"><div class="num">04</div><h3>Pflanzarbeiten</h3><p>Standortgerechte Bäume, Sträucher und Stauden – sorgfältig ausgewählt und fachgerecht gesetzt.</p></article>
+   <article class="card"><div class="num">05</div><h3>Terrassen & Wege</h3><p>Harmonische Übergänge und robuste Flächen mit natürlichen, langlebigen Materialien.</p></article>
+   <article class="card"><div class="num">06</div><h3>Gartenpflege</h3><p>Regelmäßige Pflege und saisonale Arbeiten, damit Ihr Garten dauerhaft ein Wohlfühlort bleibt.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="projekte">
+ <div class="container">
+  <div class="section-top"><div class="kicker">Einblicke in unsere Arbeit</div><h2 class="section-title">Gärten mit Charakter.</h2><p class="lead">Jeder Garten erzählt eine eigene Geschichte. Hier zeigen wir beispielhafte Gestaltungsideen von NAWOW.</p></div>
+  <div class="projects-grid">
+   <div class="project large"><div class="project-label"><span>Gestaltungsidee · Naturgarten</span><h3>Ein Stück Natur zuhause</h3></div></div>
+   <div class="project-stack">
+    <div class="project small-one"><div class="project-label"><span>Gestaltungsidee · Rückzugsort</span><h3>Ruhe im Grünen</h3></div></div>
+    <div class="project small-two"><div class="project-label"><span>Gestaltungsidee · Bepflanzung</span><h3>Vielfalt erleben</h3></div></div>
+   </div>
+  </div>
+  <p class="form-note" style="margin-top:16px">Hinweis: Die gezeigten Bilder dienen als illustrative Projektbeispiele.</p>
+ </div>
+</section>
+
+
+<section class="gallery" id="bildergalerie">
+ <div class="container">
+  <div class="section-top"><div class="kicker">Inspiration für Ihren Garten</div><h2 class="section-title">Ideen, die wachsen.</h2><p class="lead">Entdecken Sie verschiedene Möglichkeiten, Ihren Garten natürlich, praktisch und schön zu gestalten.</p></div>
+  <div class="gallery-grid">
+   <article class="gallery-card"><img loading="lazy" src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=900&q=80" alt="Üppig bepflanzter naturnaher Garten"><div class="gallery-text"><h3>Naturnaher Garten</h3><p>Lebendige Pflanzenvielfalt und natürliche Rückzugsorte.</p></div></article>
+   <article class="gallery-card"><img loading="lazy" src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=900&q=80" alt="Gepflegte Beete und grüne Gartenanlage"><div class="gallery-text"><h3>Hochbeete & Pflanzen</h3><p>Grüne Ideen für Gemüse, Kräuter und Blumen.</p></div></article>
+   <article class="gallery-card"><img loading="lazy" src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=900&q=80" alt="Grüne Naturlandschaft als Inspiration für nachhaltige Bewässerung"><div class="gallery-text"><h3>Bewässerung</h3><p>Wasser bewusst einsetzen und Pflanzen gezielt versorgen.</p></div></article>
+   <article class="gallery-card"><img loading="lazy" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80" alt="Moderne Gestaltung mit natürlichen Materialien"><div class="gallery-text"><h3>Terrassen & Wege</h3><p>Klare Formen, langlebige Materialien und Harmonie.</p></div></article>
+   <article class="gallery-card"><img loading="lazy" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80" alt="Grüner Wald als Symbol für Nachhaltigkeit"><div class="gallery-text"><h3>Nachhaltigkeit</h3><p>Mehr Natur und Vielfalt im eigenen Außenbereich.</p></div></article>
+   <article class="gallery-card"><img loading="lazy" src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=900&q=80" alt="Gartenpflanzen und liebevoll gepflegtes Grün"><div class="gallery-text"><h3>Gartenpflege</h3><p>Ein gepflegter Garten zu jeder Jahreszeit.</p></div></article>
+  </div>
+  <p class="gallery-note">Die Fotos sind illustrative Beispielbilder und keine tatsächlich durchgeführten NAWOW-Projekte. Für die Darstellung ist eine Internetverbindung erforderlich.</p>
+ </div>
+</section>
+
+<section class="values">
+ <div class="container">
+  <div class="kicker">Unsere Haltung</div><h2 class="section-title">Natürlich denken.<br>Nachhaltig handeln.</h2>
+  <p class="lead">Gute Gartengestaltung verbindet die Wünsche der Menschen mit den Möglichkeiten der Natur.</p>
+  <div class="value-grid">
+   <div class="value"><h3>Regional verwurzelt</h3><p>Wir sind in Kassel zuhause und setzen auf kurze Wege sowie ein Verständnis für die Bedingungen vor Ort.</p></div>
+   <div class="value"><h3>Naturnah gestalten</h3><p>Heimische und standortgerechte Pflanzen fördern Vielfalt und passen besser zu ihrem Umfeld.</p></div>
+   <div class="value"><h3>Wasser bewusst nutzen</h3><p>Durchdachte Bewässerung hilft, Wasser gezielt einzusetzen und Ressourcen zu schonen.</p></div>
+   <div class="value"><h3>Persönlich planen</h3><p>Jeder Außenbereich ist anders. Deshalb stehen Ihre Wünsche und eine individuelle Beratung im Mittelpunkt.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="ueber-uns">
+ <div class="container about-grid">
+  <div class="about-image" role="img" aria-label="Naturnahe Gartengestaltung mit Pflanzen und Holz"></div>
+  <div><div class="kicker">Das ist NAWOW</div><h2 class="section-title">Junges Unternehmen.<br>Grüne Ideen.</h2>
+   <p class="lead">2024 in Kassel gegründet – mit einer klaren Vorstellung davon, wie Gärten heute gestaltet werden können.</p>
+   <p>NAWOW steht für Natur, Wohlfühlen und Wow. Wir möchten Außenbereiche schaffen, die nicht nur schön aussehen, sondern sich gut anfühlen und langfristig funktionieren. Regionalität, Nachhaltigkeit und eine persönliche Zusammenarbeit bilden dafür die Grundlage.</p>
+   <div class="facts"><div class="fact"><strong>2024</strong><span>Gründungsjahr</span></div><div class="fact"><strong>Kassel</strong><span>Unser Standort</span></div><div class="fact"><strong>100 %</strong><span>Mit Leidenschaft</span></div></div>
+  </div>
+ </div>
+</section>
+
+<section class="contact" id="kontakt">
+ <div class="container contact-grid">
+  <div class="contact-info"><div class="kicker">Lassen Sie uns sprechen</div><h2 class="section-title">Bereit für Ihre grüne Oase?</h2><p>Sie haben eine Idee oder wünschen sich Unterstützung bei Ihrem Garten? Erzählen Sie uns davon. Wir freuen uns auf Ihr Projekt.</p>
+   <div class="contact-detail"><strong>NAWOW GmbH</strong>Kassel und Umgebung</div>
+   <div class="contact-detail"><strong>E-Mail</strong>kontakt@nawow-beispiel.de</div>
+   <div class="contact-detail"><strong>Öffnungszeiten</strong>Montag–Freitag · 08:00–17:00 Uhr</div>
+  </div>
+  <form id="contactForm">
+   <input name="name" placeholder="Ihr Name" aria-label="Ihr Name" required>
+   <input name="email" type="email" placeholder="Ihre E-Mail-Adresse" aria-label="Ihre E-Mail-Adresse" required>
+   <select name="topic" aria-label="Worum geht es?"><option value="">Worum geht es?</option><option>Naturnahe Gartengestaltung</option><option>Bewässerung</option><option>Hochbeet & Pflanzkonzept</option><option>Gartenpflege</option><option>Sonstiges</option></select>
+   <textarea name="message" placeholder="Erzählen Sie uns von Ihrem Vorhaben ..." aria-label="Ihre Nachricht" required></textarea>
+   <button class="btn" type="submit">Anfrage vorbereiten ↗</button>
+   <p class="form-note" id="formMessage">Schulprojekt: Das Formular ist eine Demonstration und versendet keine Daten.</p>
+  </form>
+ </div>
+</section>
+</main>
+<footer><div class="container footer-inner"><div><div class="footer-brand">NAWOW GmbH</div><div class="footer-small">Natur. Wohlfühlen. Wow.</div></div><div class="footer-small">Garten- & Landschaftsbau · Kassel</div><div class="footer-small">© 2026 NAWOW GmbH · Fiktives Unternehmen im Rahmen eines Schulprojekts</div></div></footer>
+<script>
+document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();document.getElementById('formMessage').textContent='Vielen Dank! Das Kontaktformular ist für diese Schulprojekt-Demo ausgefüllt. Es wurden keine Daten versendet.';});
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.navlinks').classList.remove('open')));
+</script>
+</body>
+</html>
